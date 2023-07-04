@@ -1,0 +1,83 @@
+body {
+  background-color: #1e1e1e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.calculator {
+  background-color: #232323;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  width: 320px;
+}
+
+.display {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 36px;
+  padding: 10px 20px;
+  text-align: right;
+  width: 93%;
+  margin-bottom: 10px;
+}
+
+.btn {
+  background-color: #363636;
+  border: none;
+  border-radius: 30px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 18px;
+  text-align: center;
+  width: 70px;
+  margin: 5px;
+  outline: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.btn.operator {
+  background-color: #ff9500;
+  background-image: linear-gradient(to bottom right, #ff9500, #ff5e00);
+  color: #fff;
+}
+
+.btn.delete {
+  background-color: #ff3b30;
+  background-image: linear-gradient(to bottom right, #ff3b30, #ff1400);
+  color: #fff;
+}
+
+.btn.percentage {
+  background-color: #007aff;
+  background-image: linear-gradient(to bottom right, #007aff, #0053d6);
+  color: #fff;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+.btn.ac,
+.btn.delete {
+  color: red;
+}
+
+table {
+  margin-top: 10px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  text-align: center;
+}
+
+tr:last-child td {
+  border-top: 1px solid #444;
+}

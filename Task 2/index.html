@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculator</title>
+  <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+  <div class="calculator">
+    <input type="text" class="display" id="result" readonly>
+    <table>
+      <tr>
+        <td><button class="btn" onclick="clearDisplay()">AC</button></td>
+        <td><button class="btn" onclick="deleteDigit()">del</button></td>
+        <td><button class="btn" onclick="append('%')">%</button></td>
+        <td><button class="btn operator" onclick="append('/')">/</button></td>
+      </tr>
+      <tr>
+        <td><button class="btn" onclick="append('7')">7</button></td>
+        <td><button class="btn" onclick="append('8')">8</button></td>
+        <td><button class="btn" onclick="append('9')">9</button></td>
+        <td><button class="btn operator" onclick="append('*')">x</button></td>
+      </tr>
+      <tr>
+        <td><button class="btn" onclick="append('4')">4</button></td>
+        <td><button class="btn" onclick="append('5')">5</button></td>
+        <td><button class="btn" onclick="append('6')">6</button></td>
+        <td><button class="btn operator" onclick="append('-')">-</button></td>
+      </tr>
+      <tr>
+        <td><button class="btn" onclick="append('1')">1</button></td>
+        <td><button class="btn" onclick="append('2')">2</button></td>
+        <td><button class="btn" onclick="append('3')">3</button></td>
+        <td><button class="btn operator" onclick="append('+')">+</button></td>
+      </tr>
+      <tr>
+        <td><button class="btn" onclick="append('0')">0</button></td>
+        <td><button class="btn" onclick="append('.')">.</button></td>
+        <td><button class="btn operator" onclick="calculate()">=</button></td>
+      </tr>
+    </table>
+  </div>
+
+  <script src="calculator.js"></script>
+</body>
+</html>
